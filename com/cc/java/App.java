@@ -6,7 +6,7 @@ public class App {                                                          // K
         Cat cat = new Cat();                                                // ertselle ein Objekt / Instanz
 
         cat.name = "Beauty";
-        cat.color = "black";
+        cat.color = "schwarz";
         cat.age = 3;
 
         // output( cat.name );
