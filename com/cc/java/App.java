@@ -5,18 +5,37 @@ public class App {                                                          // K
 
         Cat cat = new Cat();                                                // ertselle ein Objekt / Instanz
 
-        cat.name = "Beauty";
-        cat.color = "schwarz";
-        cat.age = 3;
-
         // output( cat.name );
         // output( cat.color );
         // output( String.valueOf( cat.age ) );
 
+        cat.name = "Beauty";
+        cat.color = "schwarz";
+        cat.age = 3;
+
+
         output( cat.tellYourName() );                                       // kann mir als output hier ausgegeben werden
         output( cat.tellYourColor() );
         cat.tellYourAge();                                                  // kann mir als output von aussen ausgegeben werden
-        
+
+        output("----------------------");
+
+        Cat cat2 = new Cat();                                                // ertselle ein Objekt / Instanz
+
+        // output( cat2.name );
+        // output( cat2.color );
+        // output( String.valueOf( cat2.age ) );
+
+        cat2.name = "Susi";
+        cat2.color = "braun";
+        cat2.age = 7;
+
+
+        output( cat2.tellYourName() );                                       // kann mir als output hier ausgegeben werden
+        output( cat2.tellYourColor() );
+        cat2.tellYourAge();                                                  // kann mir als output von aussen ausgegeben werden
+
+        output("----------------------");
 
         // Beispiele als Übung
             // output("----------------------");
