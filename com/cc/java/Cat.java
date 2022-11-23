@@ -4,6 +4,13 @@ public class Cat {
     public String name;
     public String color;
     public int age;
+    
+    public Cat( String name, String color, int age ) {                      // erstelle eine Konstruktor, immer genannt wie die Klasse ohne return oder void
+        this.name = name;
+        this.color = color;
+        this.age = age;
+
+    }
 
     public String tellYourName() { return this.name; }                      // man kann mit return den Wert weitergeben an einen output
     public String tellYourColor() { return this.color; }

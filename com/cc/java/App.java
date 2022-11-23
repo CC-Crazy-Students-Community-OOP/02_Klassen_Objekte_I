@@ -3,39 +3,52 @@ package com.cc.java;
 public class App {                                                          // Klasse
     public static void main( String[] args ) {                              // main method calls the method output
 
-        Cat cat = new Cat();                                                // ertselle ein Objekt / Instanz
+        // Cat cat = new Cat();                                                // ertselle ein Objekt / Instanz
 
-        // output( cat.name );
-        // output( cat.color );
-        // output( String.valueOf( cat.age ) );
+        //     // output( cat.name );
+        //     // output( cat.color );
+        //     // output( String.valueOf( cat.age ) );
 
-        cat.name = "Beauty";
-        cat.color = "schwarz";
-        cat.age = 3;
+        //     cat.name = "Beauty";
+        //     cat.color = "schwarz";
+        //     cat.age = 3;
+
+        //     output( cat.tellYourName() );                                       // kann mir als output hier ausgegeben werden
+        //     output( cat.tellYourColor() );
+        //     output( String.valueOf( cat.tellYourColor() ) );                    // man kann die umwandlung mit typeof machen
+        //     cat.tellYourAge();                                                  // kann mir als output von aussen ausgegeben werden
+
+        // output("----------------------");
+
+        // Cat cat2 = new Cat();                                                // ertselle ein Objekt / Instanz ( Aufruf eines Default Constructor)
+
+            // output( cat2.name );
+            // output( cat2.color );
+            // output( String.valueOf( cat2.age ) );
+
+            // cat2.name = "Susi";                                                 // ertselle Wert ausser halb des neuen Objekts oder der Klasse Cat
+            // cat2.color = "braun";                                               // ertselle Wert ausser halb des neuen Objekts oder der Klasse Cat
+            // cat2.age = 7;                                                       // ertselle Wert ausser halb des neuen Objekts oder der Klasse Cat
 
 
-        output( cat.tellYourName() );                                       // kann mir als output hier ausgegeben werden
-        output( cat.tellYourColor() );
-        cat.tellYourAge();                                                  // kann mir als output von aussen ausgegeben werden
+            // output( cat2.tellYourName() );                                       // kann mir als output hier ausgegeben werden
+            // output( cat2.tellYourColor() );
+            // cat2.tellYourAge();                                                  // kann mir als output von aussen ausgegeben werden
 
-        output("----------------------");
+            // output("----------------------");
 
-        Cat cat2 = new Cat();                                                // ertselle ein Objekt / Instanz
+        Cat cat3 = new Cat("Carl", "grau", 4);                 // ertselle ein Objekt ertselle Wert und nutze den Konstruktor in Cat
 
-        // output( cat2.name );
-        // output( cat2.color );
-        // output( String.valueOf( cat2.age ) );
+            // output( cat3.name );
+            // output( cat3.color );
+            // output( String.valueOf( cat3.age ) );
 
-        cat2.name = "Susi";
-        cat2.color = "braun";
-        cat2.age = 7;
+            output( cat3.tellYourName() );                                       // kann mir als output hier ausgegeben werden
+            output( cat3.tellYourColor() );
+            cat3.tellYourAge();                                                  // kann mir als output von aussen ausgegeben werden
 
+            output("----------------------");
 
-        output( cat2.tellYourName() );                                       // kann mir als output hier ausgegeben werden
-        output( cat2.tellYourColor() );
-        cat2.tellYourAge();                                                  // kann mir als output von aussen ausgegeben werden
-
-        output("----------------------");
 
         // Beispiele als Übung
             // output("----------------------");
@@ -58,6 +71,9 @@ public class App {                                                          // K
     //     System.out.println( "Hey" );
     // }
 
+    // public void test1() { System.out.println( "WER1" ); }                // methods zum Testen in Klasse Cat
+    // public static void test2() { System.out.println( "WER2" ); }         // methods zum Testen in Klasse Cat
+
 
     public static void output( String outputStr ) {                         // Methoden können als String deklariert werden
         System.out.println( outputStr );
@@ -68,7 +84,4 @@ public class App {                                                          // K
     public static void output( float outputStr ) {                          // methods are function in classes, methods also has to be declard as float
         System.out.println( outputStr );
     }
-
-    // public void test1() { System.out.println( "WER1" ); }                // methods zum Testen in Klasse Cat
-    // public static void test2() { System.out.println( "WER2" ); }         // methods zum Testen in Klasse Cat
 }
