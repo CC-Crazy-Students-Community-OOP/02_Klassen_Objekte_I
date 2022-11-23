@@ -20,7 +20,7 @@ public class App {                                                          // K
 
         // output("----------------------");
 
-        // Cat cat2 = new Cat();                                                // ertselle ein Objekt / Instanz ( Aufruf eines Default Constructor)
+        // Cat cat2 = new Cat();                                                    // ertselle ein Objekt / Instanz ( Aufruf eines Default Constructor)
 
             // output( cat2.name );
             // output( cat2.color );
@@ -37,16 +37,16 @@ public class App {                                                          // K
 
             // output("----------------------");
 
-        Cat cat3 = new Cat("Carl", "grau", 4);                 // ertselle ein Objekt ertselle Wert und nutze den Konstruktor in Cat
+        Cat cat3 = new Cat("Carl", "grau", 4);                      // ertselle ein Objekt ertselle Wert und nutze den Konstruktor in Cat
+            // cat3.setName( "Lucy" );                                              // Manipulation dank public felder in Cat möglich, daher privat
+            output( cat3.getName() );                                               // kann mir als output hier ausgegeben werden
+            output( cat3.getColor() );
+            output( cat3.getAge() );                                                // kann mir als output von aussen ausgegeben werden
 
-            // output( cat3.name );
-            // output( cat3.color );
-            // output( String.valueOf( cat3.age ) );
+            output("----------------------");
 
-            output( cat3.tellYourName() );                                       // kann mir als output hier ausgegeben werden
-            output( cat3.tellYourColor() );
-            cat3.tellYourAge();                                                  // kann mir als output von aussen ausgegeben werden
-
+        Cat cat4 = new Cat("Beauty", "schwarz", 3);
+            output( cat4.getName() + " ist " + cat4.getColor() + " und " + cat4.getAge() +" Jahre alt" );
             output("----------------------");
 
 
